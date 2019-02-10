@@ -1,0 +1,29 @@
+a:hover,
+.socials > a:hover,
+.menu li:hover > a,
+.tags > a,
+.post-socials > a:hover,
+.footer-logo .socials a:hover,
+.about > p a,
+.latest-tweets > i,
+.single-detail blockquote:before,
+.reply,
+.product-name > span,
+.price,
+.sidemenu ul li.active > a{
+	color:#af7b64;
+}
+
+.owl-dot.active,
+.simple-btn:hover,
+.product-img > span,
+.pagination > a:hover,
+.cart-btn:hover{
+	background-color:#af7b64;
+}
+
+
+.owl-dot.active,
+.pagination > a:hover{
+	border-color:#af7b64;
+}

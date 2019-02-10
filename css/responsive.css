@@ -1,0 +1,87 @@
+@media (max-width:1200px){	
+.block .container,.container{padding:0 15px}
+.menu ul li{margin:0 5px}
+.menu{width:65%}
+.header-ext{width:35%}
+.holbrook-post.style3 .holbrook-img{width:30%}
+.holbrook-post.style3 .holbrook-img img{width:290px}
+.holbrook-post.style3 .holbrook-detail{padding:10px 10px 10px 30px}
+.holbrook-post.style3 .holbrook-detail h2{font-size: 15px;margin: 4px 0 10px}
+.holbrook-detail > p{ font-size:12px;line-height:20px}
+
+}
+
+
+@media (max-width:980px){
+.block .container,.container{padding:0 15px}
+.menu > ul{display:none}
+.menu{width:55px}
+.header-ext{width:auto}
+.logo{padding:70px 0}
+.logo img{max-width:100%}
+.holbrook-carousel{width:100%;margin:0;}
+.holbrook-carousel .owl-nav{left:0;width:100%;margin:0;padding:10px;}
+aside.sidebar{float:left;margin-top:50px;padding:0 15px;width:100%}
+.insta-widget .row > div {float:left;width:20%}
+.featured-mas .row .masonary > div{float: left;width:100%}
+.about-detail{display:unset}
+.about-detail > img{display:unset;float:left;margin-bottom:30px;width:100%}
+.about-text{display:unset;float:left;padding:0;width:100%}
+.about-holbrook{padding:50px 20px}
+.filters{float:left;width:100%}
+.filters .row > div {float:left;width:33.334%}
+.holbrook-shop .row > div{float:left;width:50%}
+.single-product-gallery{width:100%}
+.single-product-detail{margin-top:30px;padding:0;width:100%}
+
+}
+
+
+
+@media (max-width:767px){
+.header-ext .socials > a{width:20px}
+.search > a{width:30px}
+.menu{width:30px}
+.menu > a{width:30px}
+.logo{padding:30px 40px}
+.sidemenu{left:-250px;width:250px}
+.slide-post-name{left:5%;padding:20px 10px;width:90%}
+.slide-post-name h3{font-size:14px}
+.post-bottom{padding:30px 0}
+.post-bottom .tags{margin-bottom:10px;text-align:center;width:100%}
+.post-bottom .tags a{display:inline-block;float:none;margin:0 8px}
+.post-socials{float:left;text-align:center;width:100%}
+.post-socials span, .post-socials a {display:inline-block;float:none}
+.follow-gallery > li{display: inline-block;float: none;margin: 0 -3px -5px;width: 25%}
+.follow-gallery{float:none;margin:0 -3px;text-align:center;width:auto}
+.footer-strip span{float:left;padding:5px;width:100%}
+.footer-logo img{max-width:100%}
+.holbrook-slide.style2 .slide-post-name{width:90%;left:5%}
+.holbrook-post.style3 .holbrook-img{display:unset;float:left;max-width:none;width:100%}
+.holbrook-post.style3 .holbrook-detail{display:unset;float:left;padding:20px;text-align:center;width:100%}
+.holbrook-post.style3 .holbrook-img img{width:100%}
+.slide-post.style2 .slide-post-name{float:left;position:relative;width:100%}
+.slide-post.style2 .slide-post-name:before{padding:0}
+.single-bottom > span{margin-bottom: 10px;text-align: center;width:100%}
+.single-bottom > a{margin-bottom:10px;text-align:center;width:100%}
+.single-detail .socials{text-align:center;width:100%}
+.single-detail .socials a{display:inline-block;float:none;margin:0 5px}
+.author > img{display:unset}
+.author-detail{display:unset;float:left;padding:20px 0 0;width:100%}
+.comment > img{display:unset}
+.comment-detail{display:unset;float:left;padding:30px 0 0}
+.comment-detail > h4 i{margin-left:10px}
+
+}
+
+
+@media (max-width:480px){
+.follow-gallery > li{width:33.334%}	
+.footer-logo{padding:50px 0}
+.insta-widget .row > div{width:50%}
+.slide-post.style3 .slide-post-name h3{font-size:13px;padding:0 10px}
+.filters .row > div {width:100%;margin-bottom:20px}
+.holbrook-shop .row > div{width:100%}
+
+}
+
