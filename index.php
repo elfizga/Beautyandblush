@@ -85,84 +85,57 @@
 												</div>
 											</div><!-- Holbrook Post -->
 										</div>
-										<div class="col-md-6">
-											<div class="holbrook-post style2">
-												<div class="holbrook-img"><img src="images\resource\post2.jpeg" alt=""></div>
-												<div class="holbrook-detail">
-													<i class="date">July 29, 2016</i>
-													<h2><a href="#" title="">Best Classic Shoes </a></h2>
-													<p>Proin gravida nibh velasel sol auctor aliquet nean solli citudin, lorem quis bibendum auctor, nisibrall ita consequat ipsum, necagiteis jmnibh id elit. Duis edo odio sitwet nibh vulputate cursusa amet...</p>
-													<div class="post-bottom">
-														<div class="tags">
-															<a href="#" title="">#shoes</a><a href="#" title="">#shopping</a><a href="#" title="">#classic</a>
+
+										<?php
+										$query = "SELECT blogs.ID as blogID, blogIMG,addDate,blogTitle, blogDesc,catName
+										FROM blogs
+										 INNER JOIN categories ON blogs.specID = categories.ID
+										 ORDER BY blogs.ID DESC LIMIT 4 ";
+											$stmt = $con->prepare($query);
+											$stmt->execute();
+											$results = $stmt->fetchAll();
+											if($stmt->rowCount() > 0) {
+												foreach($results as $result) {
+												?>
+
+												<div class="col-md-6">
+													<div class="holbrook-post style2">
+														<div class="holbrook-img"><img src="images\blogs\<?php echo $result['blogIMG'] ; ?>"></div>
+														<div class="holbrook-detail">
+															<h2><a href="post-details.php?blogId=<?php echo $result['blogID'] ;?>" > <?php echo $result['blogTitle'] ;?></a></h2>
+															<i class="date"><?php echo $result['addDate'];?></i>
+															<p><?php
+																$desc = "";
+																if(strlen($result['blogDesc']) > 250) {
+																	$desc = substr($result['blogDesc'], 0, 250) . "...";
+																} else {
+																	$desc = $result['blogDesc'];
+																}
+																$desc = strtolower($desc);
+																$desc = ucfirst($desc);
+																echo $desc; ?></p>
+															<div class="post-bottom">
+																<div class="tags">
+																	<a href="<?php echo $result['catName'] ;?>.php" title="">#<?php echo $result['catName'];?></a>
+																</div>
+															</div>
 														</div>
-													</div>
+													</div><!-- Holbrook Post -->
 												</div>
-											</div><!-- Holbrook Post -->
-										</div>
-										<div class="col-md-6">
-											<div class="holbrook-post style2">
-												<div class="holbrook-img"><img src="images\resource\post3.jpeg" alt=""></div>
-												<div class="holbrook-detail">
-													<i class="date">July 29, 2016</i>
-													<h2><a href="#" title="">Milan-Inspired Perfume </a></h2>
-													<p>Proin gravida nibh velasel sol auctor aliquet nean solli citudin, lorem quis bibendum auctor, nisibrall ita consequat ipsum, necagiteis jmnibh id elit. Duis edo odio sitwet nibh vulputate cursusa amet...</p>
-													<div class="post-bottom">
-														<div class="tags">
-															<a href="#" title="">#shoes</a><a href="#" title="">#shopping</a><a href="#" title="">#classic</a>
-														</div>
-													</div>
-												</div>
-											</div><!-- Holbrook Post -->
-										</div>
-										<div class="col-md-6">
-											<div class="holbrook-post style2">
-												<div class="holbrook-img"><img src="images\resource\post6.jpeg" alt=""></div>
-												<div class="holbrook-detail">
-													<i class="date">July 29, 2016</i>
-													<h2><a href="#" title="">New York’s Design sHOP</a></h2>
-													<p>Proin gravida nibh velasel sol auctor aliquet nean solli citudin, lorem quis bibendum auctor, nisibrall ita consequat ipsum, necagiteis jmnibh id elit. Duis edo odio sitwet nibh vulputate cursusa amet...</p>
-													<div class="post-bottom">
-														<div class="tags">
-															<a href="#" title="">#travel</a><a href="#" title="">#lifestyle</a><a href="#" title="">#design</a>
-														</div>
-													</div>
-												</div>
-											</div><!-- Holbrook Post -->
-										</div>
-										<div class="col-md-6">
-											<div class="holbrook-post style2">
-												<div class="holbrook-img"><img src="images\resource\post7.jpeg" alt=""></div>
-												<div class="holbrook-detail">
-													<i class="date">July 29, 2016</i>
-													<h2><a href="#" title="">Best Gifts for Women</a></h2>
-													<p>Proin gravida nibh velasel sol auctor aliquet nean solli citudin, lorem quis bibendum auctor, nisibrall ita consequat ipsum, necagiteis jmnibh id elit. Duis edo odio sitwet nibh vulputate cursusa amet...</p>
-													<div class="post-bottom">
-														<div class="tags">
-															<a href="#" title="">#gifts</a><a href="#" title="">#lifehack</a><a href="#" title="">#music</a>
-														</div>
-													</div>
-												</div>
-											</div><!-- Holbrook Post -->
-										</div>
-									</div>
+												<?php }} ?>
+											</div>
 								</div>
 							</div><!-- Holbrook Blog -->
-
 						</div>
-
 						<?php include "side-bar.php"; ?>
-
 					</div>
 				</div>
 			</div>
 		</section>
 
-
 		<?php include "footer.php"; ?>
 
 	</div>
-
 
 	<script src="js\jquery.min.js" type="text/javascript"></script>
 	<script src="js\bootstrap.min.js" type="text/javascript"></script>

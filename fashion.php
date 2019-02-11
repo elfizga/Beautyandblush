@@ -83,15 +83,15 @@
 																		<i class="date"><?php echo $result['addDate']; ?></i>
 																		<h2><a href="#" title=""><?php echo $result['blogTitle']; ?></a></h2>
 																		<p><?php
-                                                $desc = "";
-                                                if(strlen($result['blogDesc']) > 250) {
-                                                    $desc = substr($result['blogDesc'], 0, 250) . "...";
-                                                } else {
-                                                    $desc = $result['blogDesc'];
-                                                }
-                                                $desc = strtolower($desc);
-                                                $desc = ucfirst($desc);
-                                                echo $desc; ?></p>
+																			$desc = "";
+																			if(strlen($result['blogDesc']) > 250) {
+																				$desc = substr($result['blogDesc'], 0, 250) . "...";
+																			} else {
+																				$desc = $result['blogDesc'];
+																			}
+																			$desc = strtolower($desc);
+																			$desc = ucfirst($desc);
+																			echo $desc; ?></p>
 																		<div class="post-bottom">
 																			<div class="tags">
 																				<a href="#" title="">#fashion</a>
