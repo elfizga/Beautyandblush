@@ -15,46 +15,13 @@
 </head>
 <body>
 	<div id="top" class="theme-layout">
-		<header>
-			<div class="topbar">
-				<div class="container">
-					<div class="menu">
-						<ul>
-							<li><a href="index.php" title="">Home</a></li>
-							<li><a href="lifestyle.php" title="">Lifestyle</a></li>
-							<li><a href="fashion.php" title="">Fashion</a></li>
-							<li><a href="makeup.php" title="">makeup</a></li>
-							<li><a href="about.php" title="">Profile</a></li>
-							<li><a href="contact.php" title="">Contact us</a></li>
-						</ul>
-					</div><!-- Menu -->
-					<div class="header-ext">
-						<div class="search">
-							<a href="#" title=""><i class="fa fa-search"></i></a>
-							<form><input type="text" placeholder="Type and Hit Enter"></form>
-						</div><!-- Search -->
-						<div class="socials">
-							<a href="#" title=""><i class="fa fa-twitter"></i></a>
-							<a href="#" title=""><i class="fa fa-facebook"></i></a>
-							<a href="#" title=""><i class="fa fa-vimeo"></i></a>
-							<a href="#" title=""><i class="fa fa-instagram"></i></a>
-							<a href="#" title=""><i class="fa fa-tumblr"></i></a>
-						</div>
-					</div><!-- Header Extras -->
-				</div>
-			</div>
-			<div class="logo">
-				<div class="container">
-					<a href="#" title=""><img src="images\logo.png" alt=""></a>
-				</div>
-			</div>
-		</header><!-- Header -->
+		<?php include "header.php"; ?>
 
 		<section>
 			<div class="block remove-gap">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-8">							
+						<div class="col-md-8">
 							<div class="single-post">
 								<div class="single-img"><img src="images\resource\single.jpeg" alt=""></div>
 								<div class="single-detail">
@@ -63,7 +30,7 @@
 									<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in an piece of classical Latin literature rom 45 BC, making it over 2000 years old. Richard McClintock, at Latin sometimes xaccidentprofessor at Ham-Sydney College in Virgina, ooked up one of the obscure Latin p words, consectetur,he word in classical, discovered the ocean. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected r and the like).</p>
 									<p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "dela Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cero, written in 45 BC. This book is a treatise on the theory of ethics, popular during Renaissance. The at line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes sometimes by accidenttion 1.10.32 undoubtable source. </p>
 									<p>Morbi semper facilisis odio, in bibendum neque volutpat sed. Nullam sit amet mi leo. Vivamus eu urna mus, faucibus mauris et, consectetur turpis. Nunc dictum in nisi eu imperdiet. Aenean in ante non sque semper non sit amet sapien.</p>
-									
+
 									<div class="single-bottom">
 										<span>2 Comments</span>
 										<a href="#" title="">Write a comment</a>
@@ -113,7 +80,7 @@
 											<i>July 18, 2016</i>
 											<h4><a href="#" title="">Perfect Sunday Morning</a></h4>
 										</div><!-- Related Post -->
-									</div>	
+									</div>
 								</div><!-- Related Posts -->
 
 								<div class="post-comments">
@@ -197,27 +164,7 @@
 			</div>
 		</section>
 
-		<footer>
-			<div class="footer-logo">
-				<div class="container">
-					<a href="#" title=""><img src="images\logo2.png" alt=""></a>
-					<div class="socials">
-						<a href="#" title=""><i class="fa fa-twitter"></i></a>
-						<a href="#" title=""><i class="fa fa-facebook"></i></a>
-						<a href="#" title=""><i class="fa fa-vimeo"></i></a>
-						<a href="#" title=""><i class="fa fa-instagram"></i></a>
-						<a href="#" title=""><i class="fa fa-tumblr"></i></a>
-					</div>
-				</div>
-			</div><!-- Footer Logo -->
-			<div class="footer-strip">
-				<div class="container">
-					<span>Copyright © 2019 beauty and blush. All rights reserved.</span>
-					<a href="#top" title=""><i class="fa fa-angle-up"></i> Back to Top <i class="fa fa-angle-up"></i></a>
-					<span>Designed & Development by  muna & lazord</span>
-				</div>
-			</div>
-		</footer>
+		<?php include "footer.php"; ?>
 
 	</div>
 
@@ -249,14 +196,8 @@
 					480:{items:2},
 					0:{items:1}
 				}
-			});				
+			});
 
 		});
 	</script>
 </body>
-
-
-
-
-
-
