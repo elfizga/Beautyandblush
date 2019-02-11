@@ -1,4 +1,4 @@
-<?php //include "includes/connect.php" ?>
+<?php include "includes/connect.php" ?>
 
 <?php
 	$error = false;

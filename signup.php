@@ -12,8 +12,6 @@
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 		$email = $_POST['email'];
-		$fav = $_POST['fav'];
-		$spec = $_POST['spec'];
 		$bio = $_POST['bio'];
 		$fullname = $_POST['fullname'];
 		$image = $_FILES['file'];
@@ -23,17 +21,15 @@
             move_uploaded_file($image['tmp_name'], "images/users/" . $imageName);
           } else {
             $imageName = "defult.jpg";
-          } 
+          }
 
-		$query = "INSERT INTO users(FullName, UserName, Password, email, favoriteQuote, workfield, bio ,userIMG)
-		 VALUES(:fname, :uname, :pass, :email, :fav, :spec, :bio , :img)";
+		$query = "INSERT INTO users(FullName, UserName, Password, email, bio ,userIMG)
+		 VALUES(:fname, :uname, :pass, :email, :bio , :img)";
 		$stmt = $con->prepare($query);
 		$stmt->bindParam(":fname", $fullname);
 		$stmt->bindParam(":uname", $username);
 		$stmt->bindParam(":pass", $password);
 		$stmt->bindParam(":email", $email);
-		$stmt->bindParam(":fav", $fav);
-		$stmt->bindParam(":spec", $spec);
 		$stmt->bindParam(":bio", $bio);
 		$stmt->bindParam(":img", $imageName);
 
@@ -84,14 +80,7 @@
 						<i class="zmdi zmdi-lock"></i>
 					</div>
 					<div class="form-wrapper">
-							<input type="text" name="fav" id="fav" placeholder="Your favorite quote" class="form-control" required>
-							<i class="zmdi zmdi-quote"></i>
-					</div>
-                    <div class="form-wrapper">
-						<input type="text" name="spec" id="spec" placeholder="Work Field" class="form-control" required>
-					</div>
-					<div class="form-wrapper">
-						<textarea name="bio" id="bio" rows="4" style=" placeholder="About Me" border-top:none; border-right:none; border-left:none; color: #999999" required></textarea>
+						<textarea name="bio" id="bio" rows="4" style="border-top:none; border-right:none; border-left:none; color: #999999" placeholder="About Me" required></textarea>
                     </div><br>
                     <div class="form-wrapper">
                         <input type="file" name="file" id="file" class="inputfile" accept="image"/>

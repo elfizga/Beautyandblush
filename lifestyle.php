@@ -1,3 +1,4 @@
+<?php include "includes/connect.php"; ?>
 <!DOCTYPE html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -65,19 +66,44 @@
 						<div class="col-md-8">
 							<div class="holbrook-blog">
 
-								<div class="holbrook-post style3">
-									<div class="holbrook-img"><img src="images\resource\list-post2.jpeg" alt=""></div>
-									<div class="holbrook-detail">
-										<i class="date">July 29, 2016</i>
-										<h2><a href="#" title="">Best Classic Shoes 	</a></h2>
-										<p>Proin gravida nibh velasel sol auctor aliquet nean solli citudin, lorem quis abibendum auctor, nisibrallita conse quat ipsum, necagiteis jmnibh Igor id elituis edo odio...</p>
-										<div class="post-bottom">
-											<div class="tags">
-												<a href="#" title="">#travel</a><a href="#" title="">#vacation</a><a href="#" title="">#france</a>
-											</div>
-										</div>
-									</div>
-								</div><!-- Holbrook Post -->
+								<?php
+                            global $con;
+                            $query = "SELECT blogs.ID as blogID, blogIMG,addDate, FullName,blogTitle, blogDesc FROM blogs INNER JOIN users ON blogs.userID = users.ID WHERE specID = 1";
+                            $stmt = $con->prepare($query);
+                            $stmt->execute();
+                            $results = $stmt->fetchAll();
+
+                            if($stmt->rowCount() > 0) {
+                              foreach($results as $result) {
+                                 ?>
+																<div class="holbrook-post style3" style="height:280px; display:block">
+																	<div class="holbrook-img" style="width: 40%; height:100%; display: inline-block; float:left;"><img style="width: 100%; height:100%" src="images\blogs/<?php echo $result['blogIMG']; ?>" alt=""></div>
+																	<div class="holbrook-detail" style="display: inline-block; float:left; width: 60%;">
+																		<i class="date"><?php echo $result['addDate']; ?></i>
+																		<h2><a href="#" title=""><?php echo $result['blogTitle']; ?></a></h2>
+																		<p><?php
+                                                $desc = "";
+                                                if(strlen($result['blogDesc']) > 250) {
+                                                    $desc = substr($result['blogDesc'], 0, 250) . "...";
+                                                } else {
+                                                    $desc = $result['blogDesc'];
+                                                }
+                                                $desc = strtolower($desc);
+                                                $desc = ucfirst($desc);
+                                                echo $desc; ?></p>
+																		<div class="post-bottom">
+																			<div class="tags">
+																				<a href="#" title="">#lidestyle</a>
+																			</div>
+																		</div>
+																	</div>
+																</div><!-- Holbrook Post -->
+
+																<?php
+															}}
+															?>
+
+															the rest
 
 								<div class="holbrook-post style3">
 									<div class="holbrook-img"><img src="images\resource\list-post3.jpeg" alt=""></div>

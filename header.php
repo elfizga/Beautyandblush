@@ -1,3 +1,4 @@
+
 <header>
   <div class="topbar">
     <div class="container">
@@ -12,10 +13,24 @@
         </ul>
       </div><!-- Menu -->
       <div class="header-ext">
-        <div class="control-buttons">
-          <a href="login.php" title="">Login</a>
-          <a href="signu.php" title="">Sign Up</a>
-        </div><!-- Control Buttons -->
+        <?php
+        if(!isset($_SESSION['userid'])) { ?>
+
+          <div class="control-buttons">
+            <a href="login.php" title="">Login</a>
+            <a href="signup.php" title="">Sign Up</a>
+          </div><!-- Control Buttons -->
+
+          <?php
+        } else { ?>
+          <div class="control-buttons">
+            <a href="post-a-blog.php" title="">Add New Blog</a>
+            <a href="logout.php" title="">Logout</a>
+          </div><!-- Control Buttons -->
+          <?php
+        }
+         ?>
+
         <div class="search">
           <a href="#" title=""><i class="fa fa-search"></i></a>
           <form><input type="text" placeholder="Type and Hit Enter"></form>
