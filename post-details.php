@@ -72,27 +72,28 @@
 										</div>
 									</div>
 								</div><!-- Author -->
-								<?php
-								global $con;
-                $query = "SELECT blogs.ID as blogID, blogIMG,addDate,blogTitle, blogDesc FROM blogs ORDER BY ID DESC LIMIT 6 ";
-                $stmt = $con->prepare($query);
-                $stmt->execute();
-                $results = $stmt->fetchAll();
-                if($stmt->rowCount() > 0) {
-                  foreach($results as $result) {
-                     ?>
 								<div class="related-posts">
 									<h5 class="small-title">Related Posts</h5>
 									<div class="related-carousel">
+								<?php
+								global $con;
+									$query = "SELECT blogs.ID as blogID, blogIMG,addDate,blogTitle, blogDesc FROM blogs ORDER BY ID DESC LIMIT 6 ";
+									$stmt = $con->prepare($query);
+									$stmt->execute();
+									$results = $stmt->fetchAll();
+									if($stmt->rowCount() > 0) {
+									foreach($results as $result) {
+										?>
+								
 										<div class="related-post">
 											<div class="related-img"><img src="images\resource\related1.jpeg" alt=""></div>
 											<i><?php echo $result['addDate'] ?></i>
 											<h4><a href="post-details.php?blogId=<?php echo $result['blogID'] ;?>" title=""><?php echo $result['blogTitle'] ?> </a></h4>
 										</div><!-- Related Post -->
-								
+										<?php }} ?>
 									</div>
 								</div><!-- Related Posts -->
-				  <?php }} ?>
+				 
 
 								<div class="post-comments" >
 									<h5 class="small-title">2 Comments</h5>
