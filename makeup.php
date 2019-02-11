@@ -79,7 +79,7 @@
 																	<div class="holbrook-img" style="width: 40%; height:100%; display: inline-block; float:left;"><img style="width: 100%; height:100%" src="images\blogs/<?php echo $result['blogIMG']; ?>" alt=""></div>
 																	<div class="holbrook-detail" style="display: inline-block; float:left; width: 60%;">
 																		<i class="date"><?php echo $result['addDate']; ?></i>
-																		<h2><a href="#" title=""><?php echo $result['blogTitle']; ?></a></h2>
+																		<h2><a href="post-details.php?blogId=<?php echo $result['blogID'] ;?>" title=""><?php echo $result['blogTitle']; ?></a></h2>
 																		<p><?php
                                                 $desc = "";
                                                 if(strlen($result['blogDesc']) > 250) {
@@ -102,7 +102,7 @@
 															}}
 															?>
 
-								all of the rest are test
+								
 
 								<div class="holbrook-post style3">
 									<div class="holbrook-img"><img src="images\resource\list-post2.jpeg" alt=""></div>

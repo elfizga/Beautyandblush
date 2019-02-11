@@ -6,7 +6,7 @@
  $servername = "mysql:host=localhost;dbname=beautyandblush";
  $username = "root";
  $password = "";
- $db = "fashioncoma";
+ $db = "beautyandblush";
  $option = array( PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8");
 
 try {

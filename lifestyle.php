@@ -80,7 +80,7 @@
 																	<div class="holbrook-img" style="width: 40%; height:100%; display: inline-block; float:left;"><img style="width: 100%; height:100%" src="images\blogs/<?php echo $result['blogIMG']; ?>" alt=""></div>
 																	<div class="holbrook-detail" style="display: inline-block; float:left; width: 60%;">
 																		<i class="date"><?php echo $result['addDate']; ?></i>
-																		<h2><a href="#" title=""><?php echo $result['blogTitle']; ?></a></h2>
+																		<h2><a href="post-details.php?blogId=<?php echo $result['blogID'] ;?>" title=""><?php echo $result['blogTitle']; ?></a></h2>
 																		<p><?php
                                                 $desc = "";
                                                 if(strlen($result['blogDesc']) > 250) {
@@ -93,7 +93,7 @@
                                                 echo $desc; ?></p>
 																		<div class="post-bottom">
 																			<div class="tags">
-																				<a href="#" title="">#lidestyle</a>
+																				<a href="#" title="">#lifestyle</a>
 																			</div>
 																		</div>
 																	</div>
@@ -103,7 +103,7 @@
 															}}
 															?>
 
-															the rest
+															
 
 								<div class="holbrook-post style3">
 									<div class="holbrook-img"><img src="images\resource\list-post3.jpeg" alt=""></div>
