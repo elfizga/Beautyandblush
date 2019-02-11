@@ -40,7 +40,7 @@
   </div>
   <div class="logo">
     <div class="container">
-      <a href="#" title=""><img src="images\logo.png" alt=""></a>
+      <a href="#" title=""><img src="images\bandb.png" alt="" heigh="250" width="500"></a>
     </div>
   </div>
 </header><!-- Header -->

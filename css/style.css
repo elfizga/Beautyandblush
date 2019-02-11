@@ -516,7 +516,7 @@ header{
 /*=============== Logo ===================*/
 .logo {
     float: left;
-    padding: 105px 0;
+    padding: 70px 0;
     text-align: center;
     width: 100%;
 }
@@ -2007,7 +2007,7 @@ form.form button {
 
 /*=============== Footer ===================*/
 footer {
-    background:#111111;
+    background:#e7e7e7;
     float: left;
     width: 100%;
 }
@@ -2063,7 +2063,7 @@ footer {
 }
 .footer-logo {
     float: left;
-    padding: 90px 0 75px;
+    padding: 80px 0 70px;
     text-align: center;
     width: 100%;
 }
@@ -2078,13 +2078,13 @@ footer {
     margin: 20px 0 0;
 }
 .footer-logo .socials a {
-    color: #fff;
+    color: rgb(0, 0, 0);
     height: 20px;
     line-height: 20px;
 }
 .footer-strip {
-    background: #090909;
-    border-top: 1px solid #212121;
+    background: #181818;
+    border-top: 1px solid #313131;
     float: left;
     padding: 15px 0;
     text-align: center;
@@ -2097,7 +2097,7 @@ footer {
 }
 .footer-strip span:last-child{float:right}
 .footer-strip a {
-    color: #fff;
+    color: rgb(164, 193, 247);
     display: inline-block;
     font-family: lato;
     font-size: 10px;

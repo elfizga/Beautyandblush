@@ -1,7 +1,7 @@
 <footer>
   <div class="footer-logo">
     <div class="container">
-      <a href="#" title=""><img src="images\logo2.png" alt=""></a>
+    <a href="#" title=""><img src="images\bandb.png" alt="" heigh="250" width="450"></a>
       <div class="socials">
         <a href="#" title=""><i class="fa fa-twitter"></i></a>
         <a href="#" title=""><i class="fa fa-facebook"></i></a>
