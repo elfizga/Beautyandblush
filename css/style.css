@@ -908,7 +908,6 @@ h5.widget-title {
     letter-spacing: 1px;
     margin: 0;
     padding: 20px 0 12px;
-    text-transform: uppercase;
     width: 100%;
 }
 .about > img {
@@ -1095,8 +1094,7 @@ form.form button {
 .about-holbrook {
     background: #fff;
     float: left;
-    padding: 60px 30px 70px;
-    text-align: center;
+    padding: 40px 30px 40px;
     width: 100%;
     -webkit-box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.06);
     -moz-box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.06);
@@ -1108,28 +1106,29 @@ form.form button {
     display: table;
     font-size: 24px;
     letter-spacing: 2px;
-    margin:0 auto 40px;
-    text-transform: uppercase;
+    margin:0 auto 20px;
 }
 .about-detail {
-    display: table;
     width: 100%;
 }
 .about-detail > img {
-    display: table-cell;
+    float: left;
+    margin: 35px;
     vertical-align: middle;
 }
 .about-text {
-    display: table-cell;
-    padding-left: 50px;
+    float: left;
     text-align: left;
+    margin: 45px;
+    width: 450px;
     vertical-align: middle;
 }
+.about-text > p { font-size: 14px ;}
 .about-text > span {
     color: #8e8f91;
     float: left;
     font-family: lato;
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 20px;
     text-transform: uppercase;
     width: 100%;

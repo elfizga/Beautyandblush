@@ -8,7 +8,7 @@
           <li><a href="lifestyle.php" title="">Lifestyle</a></li>
           <li><a href="fashion.php" title="">Fashion</a></li>
           <li><a href="makeup.php" title="">makeup</a></li>
-          <li><a href="about.php" title="">Profile</a></li>
+          <li><a href="about.php?userid=<?php echo $_SESSION['userid']; ?>" title="">Profile</a></li>
           <li><a href="contact.php" title="">Contact us</a></li>
         </ul>
       </div><!-- Menu -->
