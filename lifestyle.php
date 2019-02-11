@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Make-Up </title>
+	<title>Lifestyle</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
@@ -20,12 +20,12 @@
 				<div class="container">
 					<div class="menu">
 						<ul>
-							<li><a href="index.html" title="">Home</a></li>
-							<li><a href="lifestyle.html" title="">Lifestyle</a></li>
-							<li><a href="fashion.html" title="">Fashion</a></li>
-							<li><a href="makeup.html" title="">makeup</a></li>
-							<li><a href="about.html" title="">Profile</a></li>
-							<li><a href="contact.html" title="">Contact us</a></li>
+							<li><a href="index.php" title="">Home</a></li>
+							<li><a href="lifestyle.php" title="">Lifestyle</a></li>
+							<li><a href="fashion.php" title="">Fashion</a></li>
+							<li><a href="makeup.php" title="">makeup</a></li>
+							<li><a href="about.php" title="">Profile</a></li>
+							<li><a href="contact.php" title="">Contact us</a></li>
 						</ul>
 					</div><!-- Menu -->
 					<div class="header-ext">
@@ -60,25 +60,25 @@
 									<div class="masonary">
 										<div class="col-md-8">
 											<div class="slide-post style2">
-												<img src="images\resource\makeup.jpg" alt="">
+												<img src="images\resource\single.jpeg" alt="">
 												<div class="slide-post-name">
-													<h3><a href="#" title=""> MAKE-UP POSTS</a></h3>
+													<h3><a href="#" title=""> LIFE STYLE POSTS</a></h3>
 												</div>
 											</div><!-- Slide Post -->
 										</div>
 										<div class="col-md-4">
 											<div class="slide-post style3">
-												<img src="images\resource\1.jpg" alt="">
+												<img src="images\resource\inst6.jpeg" alt="">
 												<div class="slide-post-name">
-													<h3><a href="#" title=""> Best lipstick colors </a></h3>
+													<h3><a href="#" title=""> How to be smarter </a></h3>
 												</div>
 											</div><!-- Slide Post -->
 										</div>
 										<div class="col-md-4">
 											<div class="slide-post style3">
-												<img src="images\resource\Eye.jpg" alt="">
+												<img src="images\resource\slide-full3.jpeg" alt="">
 												<div class="slide-post-name">
-													<h3><a href="#" title=""> MAC new mascara </a></h3>
+													<h3><a href="#" title=""> live a good life </a></h3>
 												</div>
 											</div><!-- Slide Post -->
 										</div>
@@ -97,19 +97,6 @@
 					<div class="row">
 						<div class="col-md-8">
 							<div class="holbrook-blog">
-								<div class="holbrook-post style3">
-									<div class="holbrook-img"><img src="images\resource\list-post1.jpeg" alt=""></div>
-									<div class="holbrook-detail">
-										<i class="date">July 29, 2016</i>
-										<h2><a href="#" title="">Exploring French Riviera</a></h2>
-										<p>Proin gravida nibh velasel sol auctor aliquet nean solli citudin, lorem quis abibendum auctor, nisibrallita conse quat ipsum, necagiteis jmnibh Igor id elituis edo odio...</p>
-										<div class="post-bottom">
-											<div class="tags">
-												<a href="#" title="">#travel</a><a href="#" title="">#vacation</a><a href="#" title="">#france</a>
-											</div>
-										</div>
-									</div>
-								</div><!-- Holbrook Post -->
 
 								<div class="holbrook-post style3">
 									<div class="holbrook-img"><img src="images\resource\list-post2.jpeg" alt=""></div>
@@ -166,13 +153,9 @@
 										</div>
 									</div>
 								</div><!-- Holbrook Post -->
-
 							</div><!-- Holbrook Blog -->
-
 						</div>
-
 						<aside class="col-md-4 sidebar">
-
 							<div class="widget">
 								<h5 class="widget-title">Keep In Touch</h5>
 								<div class="socials">
@@ -196,9 +179,9 @@
 							<div class="widget">
 								<h5 class="widget-title">Categories</h5>
 								<ul>
-									<li><a href="fashion.html" title="">Fashion</a> </li>
-									<li><a href="lifestyle.html" title="">Lifestyle</a> </li>
-									<li><a href="makeup.html" title="">makeup</a></li>
+									<li><a href="fashion.php" title="">Fashion</a> </li>
+									<li><a href="lifestyle.php" title="">Lifestyle</a> </li>
+									<li><a href="makeup.php" title="">makeup</a></li>
 								</ul>
                             </div>
                             <div class="add"><a href="#" title=""><img src="images\resource\add.jpeg" alt=""></a></div>

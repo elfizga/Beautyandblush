@@ -1,7 +1,7 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>HolBrook HTML Template</title>
+	<title>Fashion</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
@@ -19,51 +19,13 @@
 			<div class="topbar">
 				<div class="container">
 					<div class="menu">
- 						<a class="open-sidemenu" href="#" title=""><i class="fa fa-bars"></i></a>
-
-						<div class="sidemenu">
-							<strong>Navigation <a class="close-sidemenu" href="#" title=""><i class="fa fa-remove"></i></a></strong>
-							<ul>
-								<li><a href="index.html" title="">Home</a>
-									<ul>
-										<li><a href="index.html" title="">Homepage 1</a></li>
-										<li><a href="index2.html" title="">Homepage 2</a></li>
-										<li><a href="index3.html" title="">Homepage 3</a></li>
-									</ul>
-								</li>
-								<li><a href="index.html" title="">Blog</a>
-									<ul>
-										<li><a href="single-post-full-width.html" title="">Single Post Full Width</a></li>
-										<li><a href="single-post-gallery-standard.html" title="">Single Post Gallery Standard</a></li>
-										<li><a href="single-post-right-sidebar.html" title="">Single Post Right Sidebar</a></li>
-									</ul>
-								</li>
-								<li><a href="shop.html" title="">Shop</a></li>
-								<li><a href="single-product.html" title="">Single Product</a></li>
-								<li><a href="about.html" title="">About</a></li>
-								<li><a href="contact.html" title="">Contact</a></li>
-							</ul>
-						</div><!-- Sidemenu -->
-
 						<ul>
-							<li><a href="index.html" title="">Home</a>
-								<ul>
-									<li><a href="index.html" title="">Homepage 1</a></li>
-									<li><a href="index2.html" title="">Homepage 2</a></li>
-									<li><a href="index3.html" title="">Homepage 3</a></li>
-								</ul>
-							</li>
-							<li><a href="index.html" title="">Blog</a>
-								<ul>
-									<li><a href="single-post-full-width.html" title="">Single Post Full Width</a></li>
-									<li><a href="single-post-gallery-standard.html" title="">Single Post Gallery Standard</a></li>
-									<li><a href="single-post-right-sidebar.html" title="">Single Post Right Sidebar</a></li>
-								</ul>
-							</li>
-							<li><a href="shop.html" title="">Shop</a></li>
-							<li><a href="single-product.html" title="">Single Product</a></li>
-							<li><a href="about.html" title="">About</a></li>
-							<li><a href="contact.html" title="">Contact</a></li>
+							<li><a href="index.php" title="">Home</a></li>
+							<li><a href="lifestyle.php" title="">Lifestyle</a></li>
+							<li><a href="fashion.php" title="">Fashion</a></li>
+							<li><a href="makeup.php" title="">makeup</a></li>
+							<li><a href="about.php" title="">Profile</a></li>
+							<li><a href="contact.php" title="">Contact us</a></li>
 						</ul>
 					</div><!-- Menu -->
 					<div class="header-ext">
@@ -73,7 +35,6 @@
 						</div><!-- Search -->
 						<div class="socials">
 							<a href="#" title=""><i class="fa fa-twitter"></i></a>
-							<a href="#" title=""><i class="fa fa-pinterest"></i></a>
 							<a href="#" title=""><i class="fa fa-facebook"></i></a>
 							<a href="#" title=""><i class="fa fa-vimeo"></i></a>
 							<a href="#" title=""><i class="fa fa-instagram"></i></a>
@@ -101,8 +62,7 @@
 											<div class="slide-post style2">
 												<img src="images\resource\slide-post-big1.jpeg" alt="">
 												<div class="slide-post-name">
-													<i>July 30, 2016</i>
-													<h3><a href="#" title="">Gone With The Wind</a></h3>
+													<h3><a href="#" title=""> FASHION POSTS</a></h3>
 												</div>
 											</div><!-- Slide Post -->
 										</div>
@@ -179,33 +139,11 @@
 									</div>
 								</div><!-- Holbrook Post -->
 
-								<div class="slide-post">
-									<img src="images\resource\slide-post5.jpeg" alt="">
-									<div class="slide-post-name">
-										<i>July 30, 2016</i>
-										<h3><a href="#" title="">Perfect Sunday Morning</a></h3>
-									</div>
-								</div><!-- Slide Post -->
-
 								<div class="holbrook-post style3">
 									<div class="holbrook-img"><img src="images\resource\list-post4.jpeg" alt=""></div>
 									<div class="holbrook-detail">
 										<i class="date">July 29, 2016</i>
 										<h2><a href="#" title="">Autumn Denim Guide</a></h2>
-										<p>Proin gravida nibh velasel sol auctor aliquet nean solli citudin, lorem quis abibendum auctor, nisibrallita conse quat ipsum, necagiteis jmnibh Igor id elituis edo odio...</p>
-										<div class="post-bottom">
-											<div class="tags">
-												<a href="#" title="">#travel</a><a href="#" title="">#vacation</a><a href="#" title="">#france</a>
-											</div>
-										</div>
-									</div>
-								</div><!-- Holbrook Post -->
-
-								<div class="holbrook-post style3">
-									<div class="holbrook-img"><img src="images\resource\list-post5.jpeg" alt=""></div>
-									<div class="holbrook-detail">
-										<i class="date">July 29, 2016</i>
-										<h2><a href="#" title="">Favorite Accessory </a></h2>
 										<p>Proin gravida nibh velasel sol auctor aliquet nean solli citudin, lorem quis abibendum auctor, nisibrallita conse quat ipsum, necagiteis jmnibh Igor id elituis edo odio...</p>
 										<div class="post-bottom">
 											<div class="tags">
@@ -231,9 +169,6 @@
 
 							</div><!-- Holbrook Blog -->
 
-							<div class="post-pagination">
-								<a class="old" href="#" title="">Older Posts <i class="fa fa-angle-double-right"></i></a>
-							</div>
 						</div>
 
 						<aside class="col-md-4 sidebar">
@@ -241,51 +176,8 @@
 								<h5 class="widget-title">About Us</h5>
 								<div class="about">
 									<img src="images\resource\about-widget.jpeg" alt="">
-									<h4>Hello</h4>
-									<p>Proin gravida nibh vel velit auctean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sattis sehid elit. <a href="#" title=""> Read More</a></p>
-								</div>
-							</div><!-- Widget -->
-
-							<div class="widget">
-								<h5 class="widget-title">Subscribe</h5>
-								<form class="form">
-									<input type="text" placeholder="Your email address">
-									<button>sign up</button>
-								</form>
-							</div><!-- Widget -->
-
-							<div class="widget">
-								<h5 class="widget-title">Instagram</h5>
-								<div class="insta-widget lightbox">
-									<div class="row">
-										<div class="col-md-4">
-											<a href="images\resource\inst1.jpeg" title=""><img src="images\resource\inst1.jpeg" alt="" title="Instagram 1"></a>
-										</div>
-										<div class="col-md-4">
-											<a href="images\resource\inst2.jpeg" title=""><img src="images\resource\inst2.jpeg" alt="" title="Instagram 2"></a>
-										</div>
-										<div class="col-md-4">
-											<a href="images\resource\inst3.jpeg" title=""><img src="images\resource\inst3.jpeg" alt="" title="Instagram 3"></a>
-										</div>
-										<div class="col-md-4">
-											<a href="images\resource\inst4.jpeg" title=""><img src="images\resource\inst4.jpeg" alt="" title="Instagram 4"></a>
-										</div>
-										<div class="col-md-4">
-											<a href="images\resource\inst5.jpeg" title=""><img src="images\resource\inst5.jpeg" alt="" title="Instagram 5"></a>
-										</div>
-										<div class="col-md-4">
-											<a href="images\resource\inst6.jpeg" title=""><img src="images\resource\inst6.jpeg" alt="" title="Instagram 6"></a>
-										</div>
-										<div class="col-md-4">
-											<a href="images\resource\inst7.jpeg" title=""><img src="images\resource\inst7.jpeg" alt="" title="Instagram 7"></a>
-										</div>
-										<div class="col-md-4">
-											<a href="images\resource\inst8.jpeg" title=""><img src="images\resource\inst8.jpeg" alt="" title="Instagram 8"></a>
-										</div>
-										<div class="col-md-4">
-											<a href="images\resource\inst9.jpeg" title=""><img src="images\resource\inst9.jpeg" alt="" title="Instagram 9"></a>
-										</div>
-									</div>
+									<h4>Beauty & Blush </h4>
+									<p> Beauty & Blush Blog is a Beauty blog dealing with makeup and product reviews for girls from over the world .</p>
 								</div>
 							</div><!-- Widget -->
 
@@ -293,7 +185,6 @@
 								<h5 class="widget-title">Keep In Touch</h5>
 								<div class="socials">
 									<a href="#" title=""><i class="fa fa-twitter"></i></a>
-									<a href="#" title=""><i class="fa fa-pinterest"></i></a>
 									<a href="#" title=""><i class="fa fa-facebook"></i></a>
 									<a href="#" title=""><i class="fa fa-vimeo"></i></a>
 									<a href="#" title=""><i class="fa fa-instagram"></i></a>
@@ -302,7 +193,7 @@
 							</div><!-- Widget -->
 
 							<div class="widget">
-								<h5 class="widget-title">Featured Post</h5>
+								<h5 class="widget-title">recent Post</h5>
 								<div class="featured-post">
 									<img src="images\resource\featured.jpeg" alt="">
 									<i class="date">July 29, 2016</i>
@@ -313,37 +204,12 @@
 							<div class="widget">
 								<h5 class="widget-title">Categories</h5>
 								<ul>
-									<li><a href="#" title="">Food</a> <span>(5)</span></li>
-									<li><a href="#" title="">Lifestyle</a> <span>(8)</span></li>
-									<li><a href="#" title="">Music</a> <span>(2)</span></li>
-									<li><a href="#" title="">Travel</a> <span>(4)</span></li>
-									<li><a href="#" title="">Video</a> <span>(1)</span></li>
+									<li><a href="fashion.php" title="">Fashion</a> </li>
+									<li><a href="lifestyle.php" title="">Lifestyle</a> </li>
+									<li><a href="makeup.php" title="">makeup</a></li>
 								</ul>
-							</div>
-
-							<div class="widget">
-								<h5 class="widget-title">Latest Tweet</h5>
-								<div class="latest-tweets">
-									<i class="fa fa-twitter"></i>
-									<div class="tweets-carousel">
-										<div class="tweets">
-											<blockquote>Last night @ #CFDAAwards. It was an honor to present the @Swarovski emerging talent awards. What a mega talented group.</blockquote>
-											<i class="date">July 29, 2016</i>
-										</div><!-- Tweets -->
-
-										<div class="tweets">
-											<blockquote>nisibrall ita consequat ipsum, necagiteis jmnibh id elit. Duis edo odio sitwet nibh vulputate cursusa ame</blockquote>
-											<i class="date">May 10, 2016</i>
-										</div><!-- Tweets -->
-
-										<div class="tweets">
-											<blockquote>Proin gravida nibh velasel sol auctor aliquet nean solli citudin, lorem quis bibendum auctor, nisibrall ita consequat ipsum, necagiteis jmnibh id elit.</blockquote>
-											<i class="date">September 05, 2016</i>
-										</div><!-- Tweets -->
-
-									</div><!-- Tweets Carousel -->
-								</div>
-							</div>
+                            </div>
+                            <div class="add"><a href="#" title=""><img src="images\resource\add.jpeg" alt=""></a></div>
 
 						</aside><!-- Sidebar -->
 					</div>
@@ -351,26 +217,12 @@
 			</div>
 		</section>
 
-
 		<footer>
-			<div class="follow">
-				<h4><a href="#" title="">Follow @Holbrook</a></h4>
-				<ul class="follow-gallery lightbox">
-					<li><a href="images\resource\inst1.jpeg" title=""><img src="images\resource\inst1.jpeg" alt=""></a></li>
-					<li><a href="images\resource\inst2.jpeg" title=""><img src="images\resource\inst2.jpeg" alt=""></a></li>
-					<li><a href="images\resource\inst3.jpeg" title=""><img src="images\resource\inst3.jpeg" alt=""></a></li>
-					<li><a href="images\resource\inst4.jpeg" title=""><img src="images\resource\inst4.jpeg" alt=""></a></li>
-					<li><a href="images\resource\inst5.jpeg" title=""><img src="images\resource\inst5.jpeg" alt=""></a></li>
-					<li><a href="images\resource\inst6.jpeg" title=""><img src="images\resource\inst6.jpeg" alt=""></a></li>
-					<li><a href="images\resource\inst7.jpeg" title=""><img src="images\resource\inst7.jpeg" alt=""></a></li>
-				</ul>
-			</div><!-- Follow -->
 			<div class="footer-logo">
 				<div class="container">
 					<a href="#" title=""><img src="images\logo2.png" alt=""></a>
 					<div class="socials">
 						<a href="#" title=""><i class="fa fa-twitter"></i></a>
-						<a href="#" title=""><i class="fa fa-pinterest"></i></a>
 						<a href="#" title=""><i class="fa fa-facebook"></i></a>
 						<a href="#" title=""><i class="fa fa-vimeo"></i></a>
 						<a href="#" title=""><i class="fa fa-instagram"></i></a>
@@ -380,12 +232,13 @@
 			</div><!-- Footer Logo -->
 			<div class="footer-strip">
 				<div class="container">
-					<span>Copyright © 2016 Holbrook. All rights reserved.</span>
+					<span>Copyright © 2019 beauty and blush. All rights reserved.</span>
 					<a href="#top" title=""><i class="fa fa-angle-up"></i> Back to Top <i class="fa fa-angle-up"></i></a>
-					<span>Designed & Development by  Wplobi</span>
+					<span>Designed & Development by  muna & lazord</span>
 				</div>
 			</div>
 		</footer>
+
 
 	</div>
 

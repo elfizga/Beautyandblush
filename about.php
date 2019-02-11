@@ -20,12 +20,12 @@
 				<div class="container">
 					<div class="menu">
 						<ul>
-							<li><a href="index.html" title="">Home</a></li>
-							<li><a href="lifestyle.html" title="">Lifestyle</a></li>
-							<li><a href="fashion.html" title="">Fashion</a></li>
-							<li><a href="makeup.html" title="">makeup</a></li>
-							<li><a href="about.html" title="">Profile</a></li>
-							<li><a href="contact.html" title="">Contact us</a></li>
+							<li><a href="index.php" title="">Home</a></li>
+							<li><a href="lifestyle.php" title="">Lifestyle</a></li>
+							<li><a href="fashion.php" title="">Fashion</a></li>
+							<li><a href="makeup.php" title="">makeup</a></li>
+							<li><a href="about.php" title="">Profile</a></li>
+							<li><a href="contact.php" title="">Contact us</a></li>
 						</ul>
 					</div><!-- Menu -->
 					<div class="header-ext">
