@@ -38,42 +38,7 @@
 								</div>
 							</div><!-- Contact Page -->
 						</div>
-						<aside class="col-md-4 sidebar">
-
-
-							<div class="widget">
-								<h5 class="widget-title">Recent Post</h5>
-								<div class="featured-post">
-									<img src="images\resource\featured.jpeg" alt="">
-									<i class="date">July 29, 2016</i>
-									<h5><a href="#" title="">Books that inspire</a></h5>
-								</div>
-							</div><!-- Widget -->
-
-							<div class="widget">
-								<h5 class="widget-title">Keep In Touch</h5>
-								<div class="socials">
-									<a href="#" title=""><i class="fa fa-twitter"></i></a>
-									<a href="#" title=""><i class="fa fa-facebook"></i></a>
-									<a href="#" title=""><i class="fa fa-vimeo"></i></a>
-									<a href="#" title=""><i class="fa fa-instagram"></i></a>
-									<a href="#" title=""><i class="fa fa-tumblr"></i></a>
-								</div>
-							</div><!-- Widget -->
-
-							<div class="widget">
-								<h5 class="widget-title">Categories</h5>
-								<ul>
-									<li><a href="fashion.php" title="">Fashion</a> </li>
-									<li><a href="lifestyle.php" title="">Lifestyle</a> </li>
-									<li><a href="makeup.php" title="">makeup</a></li>
-
-								</ul>
-							</div><!-- Widget -->
-
-							<div class="add"><a href="#" title=""><img src="images\resource\add.jpeg" alt=""></a></div>
-
-						</aside>
+						<?php include "side-bar.php"; ?>
 
 					</div>
 				</div>

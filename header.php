@@ -12,17 +12,14 @@
         </ul>
       </div><!-- Menu -->
       <div class="header-ext">
+        <div class="control-buttons">
+          <a href="login.php" title="">Login</a>
+          <a href="signu.php" title="">Sign Up</a>
+        </div><!-- Control Buttons -->
         <div class="search">
           <a href="#" title=""><i class="fa fa-search"></i></a>
           <form><input type="text" placeholder="Type and Hit Enter"></form>
         </div><!-- Search -->
-        <div class="socials">
-          <a href="#" title=""><i class="fa fa-twitter"></i></a>
-          <a href="#" title=""><i class="fa fa-facebook"></i></a>
-          <a href="#" title=""><i class="fa fa-vimeo"></i></a>
-          <a href="#" title=""><i class="fa fa-instagram"></i></a>
-          <a href="#" title=""><i class="fa fa-tumblr"></i></a>
-        </div>
       </div><!-- Header Extras -->
     </div>
   </div>

@@ -36,7 +36,7 @@
 body{
     float:left;
     width:100%;
-    background:#f5f6f5; 
+    background:#f5f6f5;
     font-family:open sans;
     letter-spacing:0;
     position:relative;
@@ -245,15 +245,32 @@ header{
     position:relative;
 }
 .search > a {
-    border-left: 1px dashed #474746;
+    border-right: 1px dashed #474746;
     color: #fff;
     float: right;
     font-size: 13px;
     height: 55px;
     line-height: 55px;
     text-align: right;
-    width: 55px;
+    width: 45px;
+    text-align: left;
 }
+
+.control-buttons {
+  float: right;
+  margin-left: 10px;
+}
+
+.control-buttons > a{
+    color: #7d7e80;
+    float: left;
+    font-size: 13px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    margin-right:  10px;
+}
+
 .socials {
     float: right;
     margin-right: 10px;
@@ -343,7 +360,7 @@ header{
     -o-transition:background 0.2s ease-in 0s;
     transition:background 0.2s ease-in 0s;
 }
-.menu li li:first-child a{ 
+.menu li li:first-child a{
     border-top-color: transparent;
     box-shadow: none;
     -webkit-box-shadow: none;
@@ -357,15 +374,15 @@ header{
     right: 21px;
     top: 16px;
 }
-.menu li:hover > ul{ 
+.menu li:hover > ul{
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
 }
-.menu ul ul ul { 
+.menu ul ul ul {
     left: 100%;
     top: 0;
-}    
+}
 
 /*=============== Sidemenu ===================*/
 .sidemenu {
@@ -784,7 +801,7 @@ header{
     text-align: center;
     width: 100%;
 }
-.holbrook-post.style2 .post-socials span, 
+.holbrook-post.style2 .post-socials span,
 .holbrook-post.style2 .post-socials a {
     display: inline-block;
     float: none;
@@ -821,7 +838,7 @@ header{
     vertical-align:middle;
 }
 .holbrook-post.style3 .holbrook-detail h2{font-size:17px}
-.holbrook-post.style3 .holbrook-detail i.date:before, 
+.holbrook-post.style3 .holbrook-detail i.date:before,
 .holbrook-post.style3 .holbrook-detail i.date:after{display:none}
 .holbrook-post.style3 .holbrook-detail i{padding:0}
     .holbrook-post.style3 .post-bottom {
@@ -1214,8 +1231,8 @@ form.form button {
     margin-bottom: 20px;
     text-align: left;
 }
-.single-detail h1, .single-detail h2, 
-.single-detail h3, .single-detail h4, 
+.single-detail h1, .single-detail h2,
+.single-detail h3, .single-detail h4,
 .single-detail h5, .single-detail h6 {
     letter-spacing: 1px;
     margin: 30px 0;
@@ -1362,7 +1379,7 @@ form.form button {
     position: relative;
     text-transform: uppercase;
 }
-.small-title:before, 
+.small-title:before,
 .small-title:after{
     background: #d6d8db;
     content: "";
@@ -1579,7 +1596,7 @@ form.form button {
     text-align: center;
     width: 100%;
     font-style:normal;
-    text-decoration:none; 
+    text-decoration:none;
 }
 .filters select{
     float: left;
