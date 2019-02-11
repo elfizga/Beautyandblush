@@ -24,13 +24,22 @@
   <div class="widget">
     <h5 class="widget-title">Recent Posts</h5>
     <div class="featured-post">
-      <h5 style="margin-top: 20px;"><a href="#" title="">Books that inspire</a></h5>
+    <?php
+                global $con;
+                $query = "SELECT blogs.ID as blogID, blogIMG,addDate,blogTitle, blogDesc FROM blogs ORDER BY ID DESC";
+                $stmt = $con->prepare($query);
+                $stmt->execute();
+                $results = $stmt->fetchAll();
 
-      <h5 style="margin-top: 20px;"><a href="#" title="">Books that inspire</a></h5>
+                if($stmt->rowCount() > 0) {
+                  foreach($results as $result) {
+                     ?>
+                     <h5 style="margin-top: 20px;"><a href="#" title=""><?php echo $result['blogTitle']; ?></a></h5>
 
-      <h5 style="margin-top: 20px;"><a href="#" title="">Books that inspire</a></h5>
+                     <?php
 
-      <h5 style="margin-top: 20px;"><a href="#" title="">Books that inspire</a></h5>
+                   }}?>
+
     </div>
   </div><!-- Widget -->
 
