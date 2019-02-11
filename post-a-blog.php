@@ -7,7 +7,7 @@
     }
 
     if(isset($_POST['title']) && isset($_POST['category']) && isset($_POST['desc'])) {
-      echo "ok";
+     
       global $con;
       $title = $_POST['title'];
       $category = $_POST['category'];
@@ -47,52 +47,97 @@
 
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
-	<link rel="stylesheet" href="css\icons.css">
+  <link rel="stylesheet" href="css\icons.css">
+  <link rel="stylesheet" type="text/css" href="css\color.css">
 	<link rel="stylesheet" type="text/css" href="css\style.css">
 	<link rel="stylesheet" type="text/css" href="css\responsive.css">
-	<link rel="stylesheet" type="text/css" href="css\color.css">
+	
   <link href="css\summernote.css" rel="stylesheet" />
+  <style>
+    .inputfile + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  padding:8px;
+  width: 100%;
+  margin-top:9px;
+  color: grey;
+  border-radius: 5px;
+  background-color: white;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  top:1px;
+  left:5px;
+}
+
+.form-wrapper {
+  position: relative; }
+  .form-wrapper i {
+    position: absolute;
+    bottom: 9px;
+    right: 0; }
+</style>
 </head>
 <body>
 	<div id="top" class="theme-layout">
 		<?php include "header.php"; ?>
 
-    <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12 content-side" style="padding: 20px 50px;">
+    <section class="contact-section sp-eight">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 content-side">
                     <div class="blog-details-content">
                             <div class="contact-form-area">
-                                <div class="title-text-two">Post a Blog </div>
-                                <form id="contact-form" name="contact_form" class="default-form" action="post-a-blog.php" enctype="multipart/form-data" method="post">
-                                    <div class="row">
-                                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                                <input type="text" name="title" value="" placeholder="Title" required="">
-                                            </div>
-                                              <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                                <select placehoder="Category" name="category">
-                                                    <option value="" disabled selected>Select a category</option>
-                                                    <option value="1">Lifestyle</option>
-                                                    <option value="2">Fashion</option>
-                                                    <option value="3">Makeup</option>
-                                                </select>
-                                              </div>
-                                              <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                                <label>Post Image</label>
-                                                  <textarea class="description" placeholder="Description" name="desc" required=""></textarea>
-                                              </div>
+                                    <div class="title-text-two">Post a Blog </div>
+                                    <div class="rd-form rd-mailform form-lg">
+                                        <div class="alert alert-danger hide_alert <?php
+                                     if($isError == true) { echo'show_alert';} ?>" id="erralert" style="display:none;">
+                                            <strong> <?php echo $message ?> </strong>
+                                        </div>
+                                    <form action="post-a-blog.php" method="POST" enctype="multipart/form-data" class="default-form" >
+                                        <div class="row">
+                                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                                        <input type="text" name="title" value="" placeholder="Title" required="">
+                                                    </div>
+                                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                                      <select placehoder="Category" name="category">
+                                                          <option label="Select a category" disabled selected></option>
+                                                          <?php
+                                                          global $con;
+                                                          $query = $con->prepare("SELECT * FROM categories;");
+                                                          $query->execute();
+                                                          $categories = $query->fetchAll();
+                                                          foreach($categories as $category){
+                                                              echo '<option value="' . $category['ID'] . '">' . $category['catName'] . '</option>';
+                                                          }
+                                                          ?>
+                                                      </select>
+                                                    </div>
+                                                    
+                                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                                        <textarea class="description" placeholder="Description" name="desc" required=""></textarea>
+                                                    </div><br>
 
-                                              <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                                <input type="file" name="file" id="file" class="inputfile" accept="image">
-                                              </div>
+                                                    <div class="form-wrapper col-md-12 col-sm-12 col-xs-12">
+                                                       <input type="file" name="file" id="file" class="inputfile" accept="image"/>
+                                                     <label for="file" style="border: #f3a28b solid 1px">Choose a picture</label>
+                                                        </div>
 
-                                              <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                                  <button type="submit" style="margin-left: 0" class="btn-one">Post A Blog</button>
-                                              </div>
+
+                                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                                        <button type="submit" style="margin-left: 0;padding:9px;position:relative;left:90px;top:10px;border-radius:3px;" class="btn-one">Post A Blog</button>
+                                                    </div>
+                                                   
+                                                   
                                         </div>
                                  </form>
                          </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
             <?php include "footer.php"; ?>
 
