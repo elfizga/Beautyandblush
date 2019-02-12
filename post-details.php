@@ -1,4 +1,20 @@
 <?php include "includes/connect.php"; ?>
+
+<?php
+
+	if(isset($_POST['comment'])) {
+		global $con;
+		$query = "INSERT INTO `comments` (`comment`, `userID`, `blogID`, `addDate`) VALUES (:comment, :userId, :blogId, NOW());";
+		$stmt = $con->prepare($query);
+		$stmt->bindParam(":comment", $_POST['comment']);
+		$stmt->bindParam(":userId", $_SESSION['userid']);
+		$stmt->bindParam(":blogId", $_GET['blogId']);
+
+		$stmt->execute();
+	}
+
+?>
+
 ﻿<!DOCTYPE html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -32,7 +48,7 @@
                                             blogs.ID, blogs.blogTitle, blogs.blogIMG , blogs.blogDesc ,  blogs.addDate ,
                                             users.FullName , users.userIMG , users.bio
                                             FROM blogs
-                                           
+
                                             INNER JOIN users ON users.ID = blogs.userID WHERE blogs.ID = ? ";
                                             global $con;
                                             $query = $con->prepare($sql);
@@ -41,7 +57,7 @@
                                             $blogID = $result['ID'];
                                             ?>
 								<div class="single-img"><img src="images/blogs\<?php echo $result['blogIMG'] ?>" alt=""></div>
-								
+
 								<div class="single-detail">
 									<i class="date"><?php echo $result['addDate'] ?></i>
 									<h1 class="post-title"><?php echo $result['blogTitle'] ?></h1>
@@ -84,7 +100,7 @@
 									if($stmt->rowCount() > 0) {
 									foreach($results as $result) {
 										?>
-								
+
 										<div class="related-post">
 											<div class="related-img"><img src="images\resource\related1.jpeg" alt=""></div>
 											<i><?php echo $result['addDate'] ?></i>
@@ -93,37 +109,63 @@
 										<?php }} ?>
 									</div>
 								</div><!-- Related Posts -->
-				 
+
 
 								<div class="post-comments" >
-									<h5 class="small-title">2 Comments</h5>
+
+									<?php
+										global $con;
+										$query = "SELECT * FROM comments INNER JOIN users ON comments.userID = users.ID WHERE comments.blogID = :blog_id";
+										$stmt = $con->prepare($query);
+										$stmt->bindParam(":blog_id", $_GET['blogId']);
+
+										$stmt->execute();
+
+										$comments = $stmt->fetchAll();
+
+									?>
+									<h5 class="small-title"><?php echo $stmt->rowCount(); ?> Comments</h5>
+
+
 									<ul>
-										<li>
-											<div class="comment">
-												<img src="images\resource\comment1.jpeg" alt="">
-												<div class="comment-detail">
-													<h4>Karlie Kloss <i>July 28, 2016</i></h4>
-													<a class="reply" href="#" title="">Reply</a>
-													<p>Fusce vitae mi cursus augue tempor gravida. Nam ut nunc rutrum, finibus sapien , venenatis tortor. Maenas vel quam aliquet, iaculis elit ac, sollicitudin dolor. Praesent pulvinar sollicitudin rognation.</p>
-												</div>
-											</div><!-- Comment -->
-										</li>
-										
+										<?php
+										foreach($comments as $comment) { ?>
+
+											<li>
+												<div class="comment">
+													<img src="images\users\<?php echo $comment['userIMG'] ?>" style="width: 60px; height: 60px" alt="">
+													<div class="comment-detail">
+														<h4 style="width:100%"><?php echo $comment['FullName'] ?> <i style="float: right;"><?php echo $comment['addDate'] ?></i></h4>
+														<p><?php echo $comment['comment']; ?></p>
+													</div>
+												</div><!-- Comment -->
+											</li>
+
+											<?php
+										}?>
+
+
 									</ul>
 								</div><!-- Post Comments -->
 
-								<div class="comment-form" id="comments">
-									<h5 class="small-title">Write A Comment</h5>
-									<form class="simple-form">
-										<div class="row">
-											<div class="col-md-4"><input type="text" placeholder="Name *" ></div>
-											<div class="col-md-4"><input type="email" placeholder="Email *"></div>
-											<div class="col-md-4"><input type="text" placeholder="Website"></div>
-											<div class="col-md-12"><textarea placeholder="Message"></textarea></div>
-											<button type="submit" class="simple-btn" style="position:relative;top:7px;left:60px;">Post Comment</button>
-										</div>
-									</form>
-								</div>
+								<?php
+								if(isset($_SESSION['userid'])) { ?>
+
+									<div class="comment-form" id="comments">
+										<h5 class="small-title">Write A Comment</h5>
+										<form class="simple-form" method="post" action="post-details.php?blogId=<?php echo $_GET['blogId']; ?>">
+											<div class="row">
+												<div class="col-md-12"><textarea name="comment" placeholder="Message"></textarea></div>
+												<button type="submit" class="simple-btn" style="position:relative;top:7px;left:60px;">Post Comment</button>
+											</div>
+										</form>
+									</div>
+
+									<?php
+								}
+ 								?>
+
+
 
 
 							</div><!-- Single Post -->
