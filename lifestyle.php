@@ -100,52 +100,8 @@
 																</div><!-- Holbrook Post -->
 
 																<?php
-															}}
+															}} else{ echo " there is no posts to show" ;}
 															?>
-
-															
-
-								<div class="holbrook-post style3">
-									<div class="holbrook-img"><img src="images\resource\list-post3.jpeg" alt=""></div>
-									<div class="holbrook-detail">
-										<i class="date">July 29, 2016</i>
-										<h2><a href="#" title="">Milan-Inspired Perfume </a></h2>
-										<p>Proin gravida nibh velasel sol auctor aliquet nean solli citudin, lorem quis abibendum auctor, nisibrallita conse quat ipsum, necagiteis jmnibh Igor id elituis edo odio...</p>
-										<div class="post-bottom">
-											<div class="tags">
-												<a href="#" title="">#travel</a><a href="#" title="">#vacation</a><a href="#" title="">#france</a>
-											</div>
-										</div>
-									</div>
-								</div><!-- Holbrook Post -->
-
-								<div class="holbrook-post style3">
-									<div class="holbrook-img"><img src="images\resource\list-post4.jpeg" alt=""></div>
-									<div class="holbrook-detail">
-										<i class="date">July 29, 2016</i>
-										<h2><a href="#" title="">Autumn Denim Guide</a></h2>
-										<p>Proin gravida nibh velasel sol auctor aliquet nean solli citudin, lorem quis abibendum auctor, nisibrallita conse quat ipsum, necagiteis jmnibh Igor id elituis edo odio...</p>
-										<div class="post-bottom">
-											<div class="tags">
-												<a href="#" title="">#travel</a><a href="#" title="">#vacation</a><a href="#" title="">#france</a>
-											</div>
-										</div>
-									</div>
-								</div><!-- Holbrook Post -->
-
-								<div class="holbrook-post style3">
-									<div class="holbrook-img"><img src="images\resource\list-post6.jpeg" alt=""></div>
-									<div class="holbrook-detail">
-										<i class="date">July 29, 2016</i>
-										<h2><a href="#" title="">New York’s Design sHOP</a></h2>
-										<p>Proin gravida nibh velasel sol auctor aliquet nean solli citudin, lorem quis abibendum auctor, nisibrallita conse quat ipsum, necagiteis jmnibh Igor id elituis edo odio...</p>
-										<div class="post-bottom">
-											<div class="tags">
-												<a href="#" title="">#travel</a><a href="#" title="">#vacation</a><a href="#" title="">#france</a>
-											</div>
-										</div>
-									</div>
-								</div><!-- Holbrook Post -->
 							</div><!-- Holbrook Blog -->
 						</div>
 						<?php include "side-bar.php"; ?>
