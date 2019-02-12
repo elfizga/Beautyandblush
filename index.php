@@ -100,7 +100,7 @@
 
 												<div class="col-md-6">
 													<div class="holbrook-post style2">
-														<div class="holbrook-img"><img src="images\blogs\<?php echo $result['blogIMG'] ; ?>"></div>
+														<div class="holbrook-img"><img src="images\blogs\<?php echo $result['blogIMG'] ; ?>" style="height: 200px;"></div>
 														<div class="holbrook-detail">
 															<h2><a href="post-details.php?blogId=<?php echo $result['blogID'] ;?>" > <?php echo $result['blogTitle'] ;?></a></h2>
 															<i class="date"><?php echo $result['addDate'];?></i>
